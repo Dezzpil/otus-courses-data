@@ -28,7 +28,7 @@ def get_courses_links_from_api(offset: int):
             items = body['data']['items'] if 'items' in body['data'] else []
             print(f'{mark} items len {len(items)}')
             if len(items):
-                with open('./urls.txt', 'a') as file:
+                with open('eda/2025-02-27/urls.txt', 'a') as file:
                     for item in items:
                         items_total_cnt += 1
                         slug = item['slug']

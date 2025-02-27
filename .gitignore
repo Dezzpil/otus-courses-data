@@ -1,2 +1,6 @@
 .venv
 .idea
+errors
+!errors/.gitkeep
+otus.db
+output.csv
